@@ -29,7 +29,6 @@ class FlatIterator:
                 item = next(self.iterator)
             # в случае неудачи (последний элемент) не прекращаем цикл while
             except StopIteration:
-                # если копилка пуста (все элементы всех списков возвращены)
                 if not self.temp:
                     # если копилка пуста (все элементы всех списков возвращены) завершаем цикл while
                     raise StopIteration
